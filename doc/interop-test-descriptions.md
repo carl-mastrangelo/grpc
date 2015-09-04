@@ -512,8 +512,9 @@ This test verifies unary calls succeed in sending messages while using JWT
 token (created by the project's key file)
 
 Test caller should set flag `--service_account_key_file` with the
-path to json key file downloaded from
-https://console.developers.google.com.
+path to json key file downloaded from https://console.developers.google.com. Alternately, if using a
+usable auth implementation, she may specify the file location in the environment
+variable GOOGLE_APPLICATION_CREDENTIALS.
 
 Server features:
 * [UnaryCall][]
